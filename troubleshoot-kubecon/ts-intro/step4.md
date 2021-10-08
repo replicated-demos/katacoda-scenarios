@@ -12,8 +12,4 @@ Let's start by installing `support-bundle` using the `kubectl` `krew` plugin.
 
 `kubectl krew install support-bundle`{{execute}}
 
-Now that the `support-bundle` plugin is installed, we can verify functionality by running an example check from `https://support-bundle.replicated.com`{{open}}:
-
-`kubectl support-bundle https://support-bundle.replicated.com`{{execute}}
-
-This will create a `.tar.gz` archive on our host with a filename like `support-bundle-$(date)` containing default cluster info along with results of a few `analyzers` we saw earlier in the exercise. It will also run a `preflight` `analyzer` which can be exited with the `q` key.
+There shouldn't be any additional steps needed after installation, but just to be thorough, let's make sure that setup completed by running a demo `support-bundle`.
