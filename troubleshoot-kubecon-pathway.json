@@ -4,8 +4,18 @@
   "courses": [
     {
       "course_id": "ts-intro",
-      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 1"
+      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 1",
       "description": "introduction to troubleshoot.sh"
     },
+    {
+      "course_id": "ts-int",
+      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 2",
+      "description": "Introduction to Troubleshoot.sh - step 2"
+    },
+    {
+      "course_id": "ts-adv":,
+      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 3",
+      "description": "Introduction to Troubleshoot.sh - step 3"
+    }
   ]
 }
