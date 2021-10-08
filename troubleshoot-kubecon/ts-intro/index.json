@@ -27,9 +27,10 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
-      "courseData": "launch.sh"
+      "text": "intro.md",
+      "courseData": "launch.sh",
       "code": "foreground.sh"
+      "credits": "",
     },
     "finish": {
       "text": "finish.md"
