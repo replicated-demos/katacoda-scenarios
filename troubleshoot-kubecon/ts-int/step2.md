@@ -1,25 +1,49 @@
-Now that `krew` plugin has been added to `kubectl`, we're ready to install `preflight`. 
+To begin, let's edit `preflight.yaml` to add an `analyzer` under `spec:` to verify that Kubernetes is up to date:
 
-## What's Preflight?
+````
+apiVersion: troubleshoot.sh/v1beta2
+kind: Preflight
+metadata:
+  name: preflight-tutorial
+spec:
+  analyzers:
+    - clusterVersion:
+        outcomes:
+          - fail:
+              when: "< 1.18.0"
+              message: The application requires at least Kubernetes 1.18.0, and recommends 1.20.0.
+              uri: https://kubernetes.io
+          - warn:
+              when: "< 1.19.0"
+              message: Your cluster meets the minimum version of Kubernetes, but we recommend you update to 1.19.0 or later.
+              uri: https://kubernetes.io
+          - pass:
+              message: Your cluster meets the recommended and required versions of Kubernetes.
+````
 
-`Preflight` is a powerful little tool that can be used to verify that client environments are properly configured to support your application(s).
+First, we specify the `analyzer` type, in this case it is `ClusterVersion`, which will be evaluated by the `preflight` checks once we run the updated `yaml`. In the following lines, we define `pass`, `fail`, and `warn` parameters for our check.
 
-Installation of `preflight` can be done in one step with help from the `krew` installer:
+Let's take our first check a step further by adding an additional  `analyzer` for `nodeResources`. 
 
-`kubectl krew install preflight`{{execute}}
+Edit `preflight.yaml` with the following:
 
-Once installation completes, we can verify that `preflight` is running using the example check available at `https://preflight.replicated.com`{{open}}
+````
+    - nodeResources:
+        checkName: Must have 1 node with 4 GB (available) memory and 2 cores (on a single node)
+        filters:
+          allocatableMemory: 4Gi
+          cpuCapacity: "2"
+        outcomes:
+          - fail:
+              when: "count() < 1"
+              message: This application requires at least 1 node with 4GB available memory and 2 cpu cores
+          - pass:
+              message: This cluster has a node with enough memory and cpu cores
+````
 
-The example check we are going to run has `analyzers` configured to verify k8s cluster version & minimum nodes, Docker container runtime, storage class, as well system resources such as RAM, CPUs for a minimal Kubernetes prod environment. 
+The above `analyzer` will verify that the Katacoda environment we are working in has deployed a single worker node with at least 4GB of RAM & 2 CPU cores available.
 
-## What are Analyzers?
+Now, let's save & close the file, then see the results of our check by running the command:
 
-`Analyzers` are `YAML` specifications that define a set of criteria and operations to run against data collected in a `preflight` check or support bundle. Each `analyzer` included will result in either `0` or `1` outcomes. If an `analyzer` produces zero outcomes, it will not be displayed in the results.
+`kubectl preflight ./preflight.yaml`{{execute}}
 
-Let's go ahead & run the example check to see `preflight` in action:
-
-`kubectl preflight https://preflight.replicated.com`{{execute}}
-
-Use the `^` & `˅` keys to navigate through the results. When you're done, press `q` to exit back to the terminal.
-
-Now that we've verified `preflight` functionality, let's go even further by creating our first custom `preflight` check.

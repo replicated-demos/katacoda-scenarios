@@ -1,3 +1,12 @@
+## Customizing `preflight` checks
+
+Want more?
+
+There are `analyzers` available for everything ranging from K8s node count to `Ceph` storage status. You can review available `analyzers` at `https://troubleshoot.sh/docs/analyze/`{{open}}
+
+
+########
+
 Similar to `preflight`, `support-bundle` uses `yaml` files to define what information is collected & (optionally) analyze with `collectors`. 
 
 ## Customizing `support-bundle` collectors
