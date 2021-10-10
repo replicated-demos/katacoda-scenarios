@@ -20,7 +20,7 @@ note: if you're using `vim` - the superior terminal text editor - use the comman
               message: This cluster has a node with enough memory and cpu cores
 ````
 
-The above `analyzer` will verify that the Katacoda environment we are working in has deployed a single worker node with at least 2GB of RAM & 2 CPU cores available.
+The above `analyzer` will verify that the Katacoda environment we are working in has deployed a single worker node with at least 2GB of RAM & 2 vCPU cores available. Add it under `spec`.
 
 Save & close the file, then see the results of our check by running the command:
 
