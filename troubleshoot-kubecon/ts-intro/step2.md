@@ -5,7 +5,7 @@ Welcome back! Now that kubernetes is up & running we're ready to install [krew](
 
 First, download `krew-installer.sh` to the `controller` node:
 
-`curl -o krew-installer.sh hhttps://raw.githubusercontent.com/replicated-demos/katacoda-scenarios/main/troubleshoot-kubecon/ts-intro/krew-installer.sh`{{execute}}
+`curl -o krew-installer.sh https://raw.githubusercontent.com/replicated-demos/katacoda-scenarios/main/troubleshoot-kubecon/ts-intro/krew-installer.sh`{{execute}}
 
 Now, execute the script using `BaSH`:
 
