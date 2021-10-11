@@ -4,13 +4,13 @@
   "courses": [
     {
       "course_id": "ts-intro",
-      "title": "Troubleshoot.sh Intro",
-      "description": "introduction to troubleshoot.sh"
+      "title": "Troubleshoot.sh Introduction",
+      "description": "introduction to Open Source troubleshoot.sh & environment preparation"
     },
     {
       "course_id": "preflight",
       "title": "Verifying Application Requirements with Preflights",
-      "description": "Introduction to Troubleshoot.sh - step 2"
+      "description": "Introduction to preflight & creating checks using predefined analyzers."
     },
     {
       "course_id": "support-bundle",

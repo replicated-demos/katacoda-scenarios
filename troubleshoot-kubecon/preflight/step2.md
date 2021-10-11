@@ -1,3 +1,5 @@
+# Customizing a preflight Check
+
 To begin, let's edit `preflight.yaml` to add an `analyzer` under `spec:` to verify that Kubernetes is up to date:
 
 ````

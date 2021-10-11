@@ -4,7 +4,7 @@
 echo "Welcome back! Please give a few minutes for the background script to complete setup of your environment."
 
 
-. launch.sh
+/usr/bin/launch.sh
 
 wait 30
 

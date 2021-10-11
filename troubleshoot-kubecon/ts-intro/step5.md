@@ -13,3 +13,5 @@ Note: This command may throw an error if more than one `support-bundle` exists o
 Once the archive is unpacked, change into the `support-bundle-$(date)` with the command:
 
 `cd support-bundle-$(date)`
+
+...but don't jump too far ahead. We'll learn more about the contents of collected `support-bundle` archives in the next lesson.

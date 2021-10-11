@@ -1,12 +1,11 @@
-## Thanks for stopping by!
+## Introduction Complete
 
-![replicated gif](./assets/Replicated_Logo_Celebration_04-2.gif)
+![replicated gif](../../assets/Group_599.png)
 
 Congratulations, you are now ready to start building your very own custom `troubleshoot.sh` checks. Find documentation, examples & more at `https://troubleshoot.sh/explore/`{{open}}
 
 ## Let's keep in touch
 
-- Explore other Replicated projects at https://www.replicated.com
-- Keep up to date by visiting the blog https://www.replicated.com/blog/
-- Visit Replicated forums https://help.replicated.com/community/
-- Join the `#app-troubleshoot` channel on Kubernetes slack https://kubernetes.slack.com/channels/app-troubleshoot
+- Explore other [Replicated Open Source](https://www.replicated.com/oss) projects 
+- [Replicated blog](https://www.replicated.com/blog/) 
+- Join the `#app-troubleshoot` channel on [Kubernetes slack](https://kubernetes.slack.com/channels/app-troubleshoot) 
