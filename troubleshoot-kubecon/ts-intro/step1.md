@@ -1,5 +1,5 @@
 ## About Replicated
-![replicated logo](./assets/replicated-logo.png)
+![replicated logo](../../assets/replicated-logo-red.png)
 
 Founded in 2015 by Marc Campbell and Grant Miller, Replicated seeks to modernize on-prem software for the cloud-native era by providing commercial and open source tools to streamline the distribution and management of 3rd-party applications in complex enterprise environments.
 
@@ -20,34 +20,16 @@ Let's take a tour of `troubleshoot.sh` in this interactive demo.
 
 ## Environment setup
 
-Before we get started, let's first complete setup of our `kubernetes` environment by running `launch.sh`{{execute}}. This script will automatically connect the k8s `controlplane` to the k8s `nodes` launched when we requested the environment. 
+Before we get started, let's first complete setup of our `kubernetes` environment by running `launch.sh`{{execute}}. This script will automatically connect the k8s `controlplane` to the k8s `node` launched when we requested the environment. It will take 2-5 minutes to complete.
 
-While that's running, I'll tell you a bit about myself. 
+While that's running, let's introduce today's speakers.
 
-## about me
+## About the Presenters
 
-My name is Treva Nichole Williams, & I'm an Open Source fangirl. I got my start as a public cloud Cloud Virtualization Admin (a fancy way of saying OpenStack sysadmin) at Rackspace back in 2011, & have made technical contributions to OpenStack Magnum (the k8s installer for OpenStack), OpenStack Packstack (the puppet RHEL POC installer), as well as written documentation for Packstack & Kata Containers. That grew into a career as an IaaS/Paas instructor/consultant/architect, which is what I'm here doing now.
+[Treva N. Williams](https://github/OGtrilliams) - Developer Evangelist / Community Manager | Replicated
 
-Now that we're all sufficiently bored, let's head back over to the demo.
+[Kyle Sorensen](https://github.com/kylesorensen) - Core Engineer | Replicated
 
-## Krew
+[Dan Stough](https://github.com/danstough) - Core Engineer | Replicated
 
-Welcome back! Now that kubernetes is up & running we're ready to install [krew](https://krew.sigs.k8s.io/docs), the plugin manager for `kubectl`. Use this handy script to do the heavy lifting for you:
-
-First, download `krew-installer.sh` to the `controller` node:
-
-`curl -o krew-installer.sh https://raw.githubusercontent.com/OGtrilliams/katacoda-scenarios/main/replicated-demo/krew-installer.sh`{{execute}}
-
-Now, execute the script using `BaSH`:
-
-`chmod +x krew-installer.sh && bash krew-installer.sh`{{execute}}
-
-Once the script finishes running, let's verify that it is working correctly by running a simple command:
-
-`kubectl krew -h`{{execute}}
-
-If you receive an error message stating that the plugin isn't found, run `source ~/.bashrc`{{execute}} to refresh the terminal window.
-
-Now that the `krew` plugin is installed, we're ready to move on with configuring `preflight` & `support-bundle`. 
-
-Let's go!
+[Sir Hairold B. Goggington III](https://twitter.com/sirhairold) - Branch Manager 

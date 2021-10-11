@@ -1,4 +1,4 @@
-## What's a `support-bundle`?
+# All About `support-bundle`
 
 A support bundle is an archive that's created in-cluster, by collecting logs and cluster information, and executing specified commands (including redaction of sensitive information). After creating a support bundle, the cluster operator will normally deliver it to the 3rd-party application vendor for analysis and disconnected debugging. 
 
