@@ -1,21 +1,21 @@
 {
   "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools",
-  "description": "An introduction to troubleshoot.sh",
+  "description": "A tour of Troubleshoot.sh",
   "courses": [
     {
       "course_id": "ts-intro",
-      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 1",
+      "title": "Troubleshoot.sh Intro",
       "description": "introduction to troubleshoot.sh"
     },
     {
-      "course_id": "ts-int",
-      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 2",
+      "course_id": "preflight",
+      "title": "Verifying Application Requirements with Preflights",
       "description": "Introduction to Troubleshoot.sh - step 2"
     },
     {
-      "course_id": "ts-adv",
-      "title": "Advanced Kubernetes Troubleshooting Made Simple with Open Source Tools - Step 3",
-      "description": "Introduction to Troubleshoot.sh - step 3"
+      "course_id": "support-bundle",
+      "title": "Troubleshooting deployments with Support Bundles",
+      "description": "Or, how to collect diagnostic information and incites from failed kubernetes clusters and applications. We'll debug a failed application deployment."
     }
   ]
 }
