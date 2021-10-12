@@ -1,28 +1,20 @@
-# Customizing a preflight Check
+## Creating custom Preflight checks
 
-To begin, let's edit `preflight.yaml` to add an `analyzer` under `spec:` to verify that Kubernetes is up to date:
+### If you can write `yaml`, you can make your own `preflight` check.
 
-````
+As mentioned in the previous scenario, `Preflight` checks can be customized to suit your organizational needs using any number of [analyzers](https://troubleshoot.sh/docs/analyze/). Let's practice by creating our own `preflight.yaml` to suit the Katacoda environment.
+
+On the `controlplane`, create a new file named `preflight.yaml` with the following content:
+
+````yaml
 apiVersion: troubleshoot.sh/v1beta2
 kind: Preflight
 metadata:
   name: preflight-tutorial
 spec:
-  analyzers:
-    - clusterVersion:
-        outcomes:
-          - fail:
-              when: "< 1.18.0"
-              message: The application requires at least Kubernetes 1.18.0, and recommends 1.20.0.
-              uri: https://kubernetes.io
-          - warn:
-              when: "< 1.19.0"
-              message: Your cluster meets the minimum version of Kubernetes, but we recommend you update to 1.19.0 or later.
-              uri: https://kubernetes.io
-          - pass:
-              message: Your cluster meets the recommended and required versions of Kubernetes.
-````
+  analyzers: []
+````{{copy}}
 
-First, we specify the `analyzer` type, in this case it is `ClusterVersion`, which will be evaluated by the `preflight` checks once we run the updated check. In the following lines, we define `pass`, `fail`, and `warn` parameters for our check.
+This is the starter framework of our check. You can run the check as-is with the command `kubectl preflight ./preflight.yaml`{{execute}} however this won't return much useful info as we have not specified any `analyzers`. 
 
-
+Let's fix that by adding some `analyzers` from [here](https://troubleshoot.sh/docs/analyze/).

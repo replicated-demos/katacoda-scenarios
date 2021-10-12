@@ -7,7 +7,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "courseData": "step1-background.sh"
       },
       {
         "title": "Step 2",
@@ -24,6 +25,10 @@
       {
         "title": "Step 5",
         "text": "step5.md"
+      },
+      {
+        "title": "Step 6",
+        "text": "step6.md"
       }
     ],
     "intro": {
@@ -31,7 +36,12 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+    "assets": { 
+        "client": [
+            {"file": "krew.sh", "target": "/root/", "chmod": "+x"}
+          ]
+      }
   },
   "environment": {
     "uilayout": "terminal-terminal"
