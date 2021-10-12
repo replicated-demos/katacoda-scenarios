@@ -9,7 +9,7 @@ Installation of `preflight` can be done in one step with help from the `krew` in
 
 Note: This will not install anything to your cluster, it only places a single binary per plugin in your path.
 
-Once installation completes, we can verify that `preflight` is running using the example check available at `https://preflight.replicated.com`{{open}}
+Once installation completes, we can verify that `preflight` is running using the example check available at [https://preflight.replicated.com](https://preflight.replicated.com).
 
 The example check we are going to run has `analyzers` configured to verify k8s cluster version & minimum nodes, Docker container runtime, storage class, as well system resources such as RAM, CPUs & disk for a minimal Kubernetes production cluster. 
 

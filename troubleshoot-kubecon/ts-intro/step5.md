@@ -1,6 +1,6 @@
 # Run your first support-bundle
 
-Now that the `support-bundle` plugin is installed, we can verify functionality by running an example check from `https://support-bundle.replicated.com`{{open}}:
+Now that the `support-bundle` plugin is installed, we can verify functionality by running an example check from [https://support-bundle.replicated.com](https://support-bundle.replicated.com):
 
 `kubectl support-bundle https://support-bundle.replicated.com`{{execute}}
 
@@ -14,4 +14,4 @@ Once the archive is unpacked, change into the `support-bundle-$(date)` with the 
 
 `cd support-bundle-$(date)`
 
-...but don't jump too far ahead. We'll learn more about the contents of collected `support-bundle` archives in the next lesson.
+...but don't jump too far ahead. We'll learn more about the contents of collected `support-bundle` archives in a future lesson.

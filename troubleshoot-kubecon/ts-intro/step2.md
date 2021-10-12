@@ -9,7 +9,7 @@ First, download `krew-installer.sh` to the `control-plane`:
 
 Now, execute the script using `BaSH`:
 
-`chmod +x krew-installer.sh && bash krew-installer.sh`{{execute}}
+`chmod +x krew-installer.sh && . krew-installer.sh`{{execute}}
 
 Once the script finishes running, let's verify that it is working correctly by running a simple command:
 
