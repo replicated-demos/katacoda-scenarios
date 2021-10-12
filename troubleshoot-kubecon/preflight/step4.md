@@ -4,7 +4,7 @@ Let's take our first check a step further by adding an additional  `analyzer` fo
 
 Edit `preflight.yaml` with the following:
 
-note: if you're using `vim` - the superior terminal text editor - use the command `:set ai` to configure auto indentation.
+**Note**: if you're using `vim` - the superior terminal text editor - use the command `:set ai` to configure auto indentation.
 
 ```yaml
     - nodeResources:

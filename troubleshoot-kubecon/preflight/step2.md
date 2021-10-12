@@ -1,6 +1,6 @@
 ## Creating custom Preflight checks
 
-### If you can write `yaml`, you can make your own `preflight` check.
+If you can write `yaml`, you can make your own `preflight` check.
 
 As mentioned in the previous scenario, `Preflight` checks can be customized to suit your organizational needs using any number of [analyzers](https://troubleshoot.sh/docs/analyze/). Let's practice by creating our own `preflight.yaml` to suit the Katacoda environment.
 

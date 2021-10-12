@@ -15,6 +15,6 @@ Once the script finishes running, let's verify that it is working correctly by r
 
 `kubectl krew -h`{{execute}}
 
-If you receive an error message stating that the plugin isn't found, run source ~/.bashrc{{execute}} to refresh the terminal window, then try running kubectl krew -h again.
+If you receive an error message stating that the plugin isn't found, run `source ~/.bashrc`{{execute}} to refresh the terminal window, then try running kubectl krew -h again.
 
 Now that `krew` plugin has been added to `kubectl`, we're ready to install `preflight`. 

@@ -34,9 +34,9 @@ This file will tell us!
 Can you get this information from `kubectl`? 
 YES.
 
-Do you want to have the person on the other side of a Zoom debug session all the `kubectl` commands manually? 
+Do you want to have to give the person on the other side of a Zoom debug session all the `kubectl` commands manually? 
 NOPE!
 
-For a more advanced spec, you can check at the examples or [this one](https://github.com/replicatedhq/kots/blob/master/pkg/supportbundle/defaultspec/spec.yaml) used for on-premise kubernetes clusters with [KOTS](https://kots.io/).
+For a more advanced `spec`, you can check at the examples or [this one](https://github.com/replicatedhq/kots/blob/master/pkg/supportbundle/defaultspec/spec.yaml) used for on-premise Kubernetes clusters with [KOTS](https://kots.io/).
 
 Let's use a support bundle to diagnose issues with a running application.

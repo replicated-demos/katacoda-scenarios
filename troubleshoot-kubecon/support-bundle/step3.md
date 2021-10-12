@@ -30,10 +30,10 @@ tar zxf support-bundle*.tar.gz -C support-bundle --strip-components=1
 
 Hmm, all the log files under `./support-bundle/trouble-app` are empty! 🤔
 
-**NOTE**: If you don't have a directory `./support-bundle/trouble-app`, yoru app deployment might have failed. Run `. install-trouble.sh` to re-install the application.
+**NOTE**: If you don't have a directory `./support-bundle/trouble-app`, your app deployment might have failed. Run `. install-trouble.sh` to re-install the application.
 
-Let's continuing digging in the other information we collected.
-Each path under `cluster-resources` corresponds to a `<resource>/namespace.json` for namespaced resources, or <resource>/.json for cluster-level resources.
+Let's continue digging in the other information we collected.
+Each path under `cluster-resources` corresponds to a `<resource>/namespace.json` for namespaced resources, or `<resource>/.json` for cluster-level resources.
 
 If we review `./support-bundle/cluster-resources/deployments/trouble.json`{{open}} , we can see there are two unavailable replicas for the application.
 
