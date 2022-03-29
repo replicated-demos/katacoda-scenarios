@@ -1,20 +1,23 @@
 
-## Setting up Krew
+## Setting up Sbctl
 
-Now that kubernetes is up & running we're ready to install [krew](https://krew.sigs.k8s.io/docs), the plugin manager for `kubectl`. Use this handy script to do the heavy lifting for you:
+Now that kubernetes is up & running we're ready to install pre-requiusites:
 
-First, download `krew-installer.sh` to the `control-plane`:
+First, download `sbctl` to the `control-plane`:
 
-`curl -o krew-installer.sh https://raw.githubusercontent.com/replicated-demos/katacoda-scenarios/main/troubleshoot-kubecon/ts-intro/krew-installer.sh`{{execute}}
+`curl -LO https://github.com/replicatedhq/sbctl/releases/latest/download/sbctl_linux_amd64.tar.gz`{{execute}}
 
-Now, execute the script using `BaSH`:
+Now, untar the sbctl tar ball `BaSH`:
+`tar -zxvf sbctl_linux_amd64.tar.gz`{{execute}}
 
-`chmod +x krew-installer.sh && . krew-installer.sh`{{execute}}
+Once the archive is unpacked, let's move it to an executable location.
 
-Once the script finishes running, let's verify that it is working correctly by running a simple command:
+`mv sbctl /usr/bin`{{execute}}
 
-`kubectl krew -h`{{execute}}
+Verify that it is working correctly by running a simple command:
 
-If you receive an error message stating that the plugin isn't found, run `source ~/.bashrc`{{execute}} to refresh the terminal window, then try running kubectl krew -h again.
+`sbctl -h`{{execute}}
 
-Now that `krew` plugin has been added to `kubectl`, we're ready to install `preflight`. 
+Installation is now complete! Now we’re ready to try it out:
+
+`sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
