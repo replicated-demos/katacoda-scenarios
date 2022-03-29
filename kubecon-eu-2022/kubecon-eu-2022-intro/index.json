@@ -32,7 +32,12 @@
     },
     "finish": {
       "text": "finish.md"
-    }
+    },
+    "assets": {
+        "client": [
+            {"file": "get-supportbundle.sh", "target": "/root/"}
+          ]
+      }
   },
   "environment": {
     "uilayout": "terminal-terminal"
