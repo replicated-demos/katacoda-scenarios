@@ -35,7 +35,7 @@
     },
     "assets": {
         "client": [
-            {"file": "get-supportbundle.sh", "target": "/root/"}
+            {"file": "get-supportbundle.sh", "target": "/root/", "chmod": "+x"}
           ]
       }
   },

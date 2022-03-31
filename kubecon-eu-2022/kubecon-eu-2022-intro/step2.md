@@ -18,6 +18,10 @@ Verify that it is working correctly by running a simple command:
 
 `sbctl -h`{{execute}}
 
+Lets fetch the support bundle.
+
+`. get-supportbundle.sh`{{execute}}
+
 Installation is now complete! Now we’re ready to try it out:
 
 `sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
