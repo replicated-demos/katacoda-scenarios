@@ -22,6 +22,10 @@ Lets fetch the support bundle.
 
 `. get-supportbundle.sh`{{execute}}
 
-Installation is now complete! Now we’re ready to try it out:
+Installation is now complete! you’re ready to run the `sbctl` command, which will proxy a connection to the kubernetes API & also print out location of a new kubeconfig file for as long as the connection is open. If you’re unable to open a new terminal window to connect to the instance, you can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
 
 `sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
+
+Once the support bundle is served, there should be an export command generated, please run this in the `control-panel`, for example:
+`export KUBECONFIG=/tmp/local-kubeconfig-...`
+TODO: Send it to background script.
