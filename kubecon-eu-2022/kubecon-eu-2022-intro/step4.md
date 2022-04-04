@@ -16,15 +16,15 @@ Events:
   Warning  FailedScheduling  <unknown>        0/3 nodes are available: 3 node(s) didn't match node selector.
   ```
 
-  * Lets take a look at the list of nodes to see what is available:
+* Lets take a look at the list of nodes to see what is available:
   `kubectl get no`{{execute}}
 
-  * We can see that from the `describe` output the node selector does not match the available nodes.
+* We can see that from the `describe` output the node selector does not match the available nodes.
   ```
   Node-Selectors:  kubernetes.io/hostname=localhost.localdomain
   ```
 
-  * This can be fixed by editing the `rook-ceph-mon-e` deployment.
+* This can be fixed by editing the `rook-ceph-mon-e` deployment.
   `kubectl -n rook-ceph edit deployment rook-ceph-mon-e`{{execute}}
 
 Were you able to modify the node selector and save the file?
