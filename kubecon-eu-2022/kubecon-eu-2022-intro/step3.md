@@ -1,23 +1,23 @@
 
-# Let's try sbctl 
+# All about sbctl 
 
-Now that `sbctl` proxy has connected, we are now able to pull `support-bundle` details directly from `kubectl`.
+* Now that `sbctl` proxy has connected, we are now able to pull `support-bundle` details directly from `kubectl`.
 
-Let's try to get the namespace 
+* Let's try to get the namespace 
 `kubectl get namespace`{{execute}}
 
-We can also get a list of pods
+* We can also get a list of pods
 `kubectl get pods`{{execute}}
 
 As you can see, you can run almost any commands you can with regular bundle, with a few exceptions today.
 
 The following resources need to be included:
 
-Logs
+* Logs
 `kubectl logs <pod_name>`
 
-Config Maps
+* Config Maps
 `kubectl get configmap`
 
-Secrets
+* Secrets
 `kubectl get secrets`
