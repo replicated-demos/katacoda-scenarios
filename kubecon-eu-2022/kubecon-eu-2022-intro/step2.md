@@ -3,11 +3,9 @@
 
 Now that kubernetes is up & running we're ready to install pre-requiusites:
 
-* First, download `sbctl` to the `control-plane`:
+* You should see two tarballs downloaded in the `control-plane`: one for `sbctl` and an example support bundle:
 
-`curl -LO https://github.com/replicatedhq/sbctl/releases/latest/download/sbctl_linux_amd64.tar.gz`{{execute}}
-
-* Now, untar the sbctl tar ball `BaSH`:
+* Now, lets untar the sbctl tar ball:
 `tar -zxvf sbctl_linux_amd64.tar.gz`{{execute}}
 
 * Once the archive is unpacked, let's move it to an executable location.
@@ -17,10 +15,6 @@ Now that kubernetes is up & running we're ready to install pre-requiusites:
 * Verify that it is working correctly by running a simple command:
 
 `sbctl -h`{{execute}}
-
-* Lets fetch the support bundle.
-
-`. get-supportbundle.sh`{{execute}}
 
 Installation is now complete! you’re ready to run the `sbctl` command, which will proxy a connection to the kubernetes API & also print out location of a new kubeconfig file for as long as the connection is open. If you’re unable to open a new terminal window to connect to the instance, you can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
 
