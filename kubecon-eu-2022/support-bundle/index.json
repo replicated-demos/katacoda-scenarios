@@ -1,0 +1,53 @@
+{
+  "title": "",
+  "description": "How to collect diagnostic information and incites from failed kubernetes clusters and applications",
+  "difficulty": "Intermediate",
+  "time": "30",
+  "details": {
+    "steps": [
+      {
+        "title": "Setup",
+        "text": "step1.md",
+        "courseData": "step1-background.sh"
+      },
+      {
+        "title": "Create a Support Bundle",
+        "text": "step2.md",
+        "courseData": "step2-background.sh"
+      },
+      {
+        "title": "Debug an Application",
+        "text": "step3.md",
+        "courseData": "step3-background.sh"
+      },
+      {
+        "title": "Quick Diagnostics with Analyzers",
+        "text": "step4.md",
+        "courseData": "step4-background.sh"
+      },
+      {
+        "title": "Redactors for Sensitive Data",
+        "text": "step5.md",
+        "courseData": "step5-background.sh"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": { 
+        "client": [
+            {"file": "krew.sh", "target": "/root/", "chmod": "+x"},
+            {"file": "install-trouble.sh", "target": "/root/", "chmod": "+x"}
+          ]
+      }
+  },
+  "environment": {
+    "uilayout": "vscode-terminal-split"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}

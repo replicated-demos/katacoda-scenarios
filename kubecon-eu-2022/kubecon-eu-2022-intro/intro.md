@@ -11,4 +11,4 @@ Fortunately, Replicated comes to the rescue with a framework of Kubernetes tools
 
 ## Prerequisites
 
-The vscode requires port `23000` to be opened on the firewall, if you don't have the port open you can use your local editor to edit.
+This activity uses [VScode](https://code.visualstudio.com/), which requires that port `23000` to be opened on the firewall. If you don't have the port open you can use your local editor (vim, emacs, nano, etc) to edit.
