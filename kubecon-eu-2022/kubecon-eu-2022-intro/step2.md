@@ -1,22 +1,24 @@
 
 ## Setting up Sbctl
 
-Now that kubernetes is up & running we're ready to install pre-requiusites:
+Now that Kubernetes is up & running, let's finish setting up our environment by setting up `sbctl`:
 
-* You should see two tarballs downloaded in the `control-plane`: one for `sbctl` and an example support bundle:
+* You should see two tarballs downloaded in the home directory of the  `control-plane`: one for `sbctl` and an example `support-bundle`:
 
-* Now, lets untar the sbctl tar ball:
+* Decompress the `sbctl` tar ball using the following command:
 `tar -zxvf sbctl_linux_amd64.tar.gz`{{execute}}
 
 * Once the archive is unpacked, let's move it to an executable location.
 
-`mv sbctl /usr/bin`{{execute}}
+`sudo mv sbctl /usr/local/bin`{{execute}}
 
 * Verify that it is working correctly by running a simple command:
 
 `sbctl -h`{{execute}}
 
-Installation is now complete! you’re ready to run the `sbctl` command, which will proxy a connection to the kubernetes API & also print out location of a new kubeconfig file for as long as the connection is open. If you’re unable to open a new terminal window to connect to the instance, you can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
+Installation is now complete! you’re ready to run the `sbctl` command, which will proxy a connection to the kubernetes API & also print out location of a new `kubeconfig` file for as long as the connection is open. 
+
+If you’re unable to open a new terminal window to connect to the instance, you can shift the `sbctl serve` command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
 
 `sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
 
