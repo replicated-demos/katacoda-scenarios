@@ -4,8 +4,8 @@
   "courses": [
     {
       "course_id": "kubecon-eu-2022-intro",
-      "title": "Workshop Introduction",
-      "description": "Introduction to Workshop."
+      "title": "Workshop Introduction with sbctl",
+      "description": "Introduction to Workshop with support bundle control, or sbctl."
     },
     {
       "course_id": "support-bundle",
