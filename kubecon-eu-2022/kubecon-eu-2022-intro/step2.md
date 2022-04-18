@@ -16,7 +16,7 @@ Now that kubernetes is up & running we're ready to install pre-requiusites:
 
 `sbctl -h`{{execute}}
 
-Installation is now complete! you’re ready to run the `sbctl` command, which will proxy a connection to the kubernetes API & also print out location of a new kubeconfig file for as long as the connection is open. If you’re unable to open a new terminal window to connect to the instance, you can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
+Installation is now complete! You can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
 
 `sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
 
