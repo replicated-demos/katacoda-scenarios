@@ -6,6 +6,11 @@
       "course_id": "kubecon-eu-2022-intro",
       "title": "Workshop Introduction",
       "description": "Introduction to Workshop."
+    },
+    {
+      "course_id": "support-bundle",
+      "title": "Troubleshooting deployments with Support Bundles",
+      "description": "Or, how to collect diagnostic information and incites from failed kubernetes clusters and applications. We'll debug a failed application deployment."
     }
   ]
 }
