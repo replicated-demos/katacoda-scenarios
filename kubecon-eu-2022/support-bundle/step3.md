@@ -25,7 +25,7 @@ Let's collect the bundle and extract it.
 
 ```bash
 kubectl support-bundle trouble-1.yaml
-tar zxf support-bundle*.tar.gz -C support-bundle --strip-components=1
+tar zxvf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
 Hmm, all the log files under `./support-bundle/trouble-app` are empty! 🤔

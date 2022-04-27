@@ -23,7 +23,9 @@ Now get that bundle!
 
 This generates an archive in the user's `$HOME` directory. 
 We can expand this by running the following (which will also remove the time-stamped directory):
+
 `mkdir support-bundle-data`{{execute}}
+
 `tar zxvf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1`{{execute}}
 
 If you visit the `support-bundle-data` folder in the IDE tab, you should see we have a mostly-full description of the state of our cluster and what's running in it, minus some potentially sensitive information (we'll cover **Redactors** in future step).
