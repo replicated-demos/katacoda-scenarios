@@ -39,7 +39,7 @@
     "uieditorpath": "/root",
     "showide": true,
     "idePort": 23000,
-    "uilayout": "vscode-terminal-split"
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"

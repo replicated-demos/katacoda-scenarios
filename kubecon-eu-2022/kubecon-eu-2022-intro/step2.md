@@ -16,10 +16,9 @@ Now that kubernetes is up & running we're ready to install pre-requiusites:
 
 `sbctl -h`{{execute}}
 
-Installation is now complete! You can shift the sbctl serve command to the background by appending an `&` to the end of the command, then hit the ENTER key to return to command line as shown below:
+Installation is now complete! You can run the `sbctl shell` which will setup the kubeconfig environment:
 
-`sbctl serve --support-bundle-location=supportbundle-example.tar.gz &`{{execute}}
+`sbctl shell --support-bundle-location=supportbundle-example.tar.gz`{{execute}}
 
-Once the support bundle is served, there should be an export command generated, please run this in the `control-panel`, for example:
-`export KUBECONFIG=/tmp/local-kubeconfig-...`
-TODO: Send it to background script.
+Once the support bundle is served, test with a command:
+`kubectl get no`
