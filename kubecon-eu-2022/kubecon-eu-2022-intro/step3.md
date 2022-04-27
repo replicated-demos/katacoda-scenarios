@@ -1,7 +1,7 @@
 
 # All about sbctl 
 
-* Now that `sbctl` proxy has connected, we are now able to pull `support-bundle` details directly from `kubectl`.
+* Now that `sbctl` virtual cluster shell has connected, we are now able to pull `support-bundle` details directly from `kubectl`.
 
 * Let's try to get the namespace 
 `kubectl get namespace`{{execute}}
