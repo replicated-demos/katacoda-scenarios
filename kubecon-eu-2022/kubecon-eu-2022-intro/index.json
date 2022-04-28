@@ -39,7 +39,6 @@
             {"file": "install-trouble.sh", "target": "/root/", "chmod": "+x"}
           ]
       }
-    }
   },
   "environment": {
     "uieditorpath": "/root",
