@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rf ./support-bundle*
-mkdir support-bundle
+rm -rf ./support-bundle-*
+mkdir support-bundle-data
 
 cat <<'EOF' | kubectl apply -f -
 apiVersion: v1

@@ -33,6 +33,12 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": { 
+        "client": [
+            {"file": "install-trouble.sh", "target": "/root/", "chmod": "+x"}
+          ]
+      }
     }
   },
   "environment": {

@@ -5,4 +5,3 @@ curl -LO https://github.com/replicated-demos/katacoda-scenarios/raw/main/kubecon
 
 tar -zxvf sbctl_linux_amd64.tar.gz
 mv sbctl /usr/bin
-sbctl shell -s supportbundle-example.tar.gz
