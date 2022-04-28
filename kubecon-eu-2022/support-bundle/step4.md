@@ -47,7 +47,7 @@ With the app still broken, let's run the this spec.
 
 ```bash
 kubectl support-bundle trouble-2.yaml
-tar zxf support-bundle*.tar.gz -C support-bundle --strip-components=1
+tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
 We can see the interactive output now tells us in plain language that are app won't run without the proper node labels.
@@ -65,7 +65,7 @@ kubectl support-bundle trouble-2.yaml
 
 If we extract those results, we've got a new problem though... 
 ```bash
-tar zxf support-bundle*.tar.gz -C support-bundle --strip-components=1
+tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
 If we take a look at the logs for the running pod, one of the devs is echoing our API secret in the logs (see `./suppport-bundle/trouble-app/<pod id>.log`)!

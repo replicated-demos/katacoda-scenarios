@@ -1,3 +1,3 @@
 #!/bin/bash
 
-mkdir support-bundle
+mkdir support-bundle-data

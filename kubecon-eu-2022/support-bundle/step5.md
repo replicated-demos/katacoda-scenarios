@@ -59,7 +59,7 @@ This time we'll use the `interactive=false` flag and pipe to `jq` so we can mimi
 rm -rf support-bundle*
 mkdir support-bundle
 kubectl support-bundle trouble-3.yaml --interactive=false | jq
-tar zxf support-bundle*.tar.gz -C support-bundle --strip-components=1
+tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
 If we look at the logs output now (see `./suppport-bundle/trouble-app/<pod id>.log`), we can see the token is redacted. 
