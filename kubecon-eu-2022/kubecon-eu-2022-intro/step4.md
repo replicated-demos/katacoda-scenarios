@@ -9,7 +9,10 @@ We saw the node selector is currently set to `localhost.localdomain`, but we hav
   `kubectl -n rook-ceph edit deployment rook-ceph-mon-b`{{execute}}
 
 * Well this is an unexpected error, is `vi` not installed perhaps or not in PATH
-`error: unable to launch the editor "vi"`
+
+```
+error: unable to launch the editor "vi"
+```
 
 * Lets try to shell into one of the other running mon pod containers and see if we can see ceph status
 `kubectl -n rook-ceph exec -it rook-ceph-mon-a-85546b9c7d-nkv2f -- /bin/bash`{{execute}}
