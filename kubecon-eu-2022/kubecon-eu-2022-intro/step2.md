@@ -1,11 +1,7 @@
 # Making Trouble!
 
-Now that kubernetes is up & running, lets make some trouble in the cluster:
+Now that the chaotic kubernetes cluster is up & running, lets check to make sure it has multiple nodes:
 
-* Lets run the following to create chaos:
-`. install-trouble.sh`{{execute}}
-
-* Once the troubled cluster is deployed, lets check it:
 `kubectl get no`{{execute}}
 
 You should see 3 nodes in the cluster.
