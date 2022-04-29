@@ -1,5 +1,4 @@
-
-## Making Trouble!
+# Making Trouble!
 
 Now that kubernetes is up & running, lets make some trouble in the cluster:
 
