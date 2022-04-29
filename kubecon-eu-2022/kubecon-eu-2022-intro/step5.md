@@ -7,12 +7,13 @@ What we actually did here is troubleshoot the cluster which was in a degraded st
 
 ## How did this work?
 
-The script that we initially ran `install_trouble.sh` was actually just serving up by API server interfacing between Kubetentes json log files and `kubectl` cli, we call this `sbctl`.
-`cat install_trouble.sh`{{execute}}
+The script that we initially ran `install-trouble.sh` was actually just serving up an API server interfacing between Kubetentes json log files and `kubectl` cli, we call this `sbctl`.
+`ls -l && cat install-trouble.sh`{{execute}}
 
 Think of `sbctl` as a virtual cluster that uses pre-collected logs from Kubernetes environments you may or may not have access to to serve up resources that can be queried with `kubectl` that everyone is familiar with.
 
-* Internally how is `sbctl` serving the json logs?
+## Internally how is `sbctl` serving the json logs?
+
 It starts up a local API server referencing a support bundle and then `kubectl` points to this local API server to run requests against. Of course there are some limitations with this and we are constantly improving its capabilities.
 
 * Let's try to get the namespace 
@@ -44,7 +45,7 @@ The following resources need to be supported in the future:
 `kubectl pv`
 
 We would love for some of you to help us bridge the gap with some of these features.
-- [sbctl](https://github.com/replicatedhq/sbctl/)
+- [https://github.com/replicatedhq/sbctl/](https://github.com/replicatedhq/sbctl/)
 
 ## Generating Support Bundles
 
