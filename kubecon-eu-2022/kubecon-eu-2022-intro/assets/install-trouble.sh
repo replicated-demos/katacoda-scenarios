@@ -14,6 +14,6 @@ if [[ -f "$FILE" ]]; then
   fi
 
 else
-  echo "Wait for cluster to become chaotic...try again..."
+  echo "Waiting for cluster to become chaotic...try again..."
 fi
 

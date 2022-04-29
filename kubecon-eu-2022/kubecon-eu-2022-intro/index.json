@@ -1,6 +1,6 @@
 {
-  "title": "Intro to Workshop",
-  "description": "Introduction to the troubleshooting workshop",
+  "title": "Troubleshoot K8s Cluster",
+  "description": "Introduction to the troubleshooting K8s clusters.",
   "difficulty": "Beginner",
   "time": "10 minutes",
   "details": {
