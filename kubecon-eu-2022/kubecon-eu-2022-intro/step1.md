@@ -1,6 +1,4 @@
 
-# Intro
-
 While our environment is warming up, let's briefly discuss what will happen to the cluster.
 
 There will be chaos in the cluster, we are going to cause TROUBLE!
