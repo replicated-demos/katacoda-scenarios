@@ -1,7 +1,8 @@
 
 # Installing trouble
 
-* Lets run the following to create chaos:
+* Lets run the following to create chaos
+
 `. install-trouble.sh`{{execute}}
 
 While our environment is warming up, let's briefly discuss what will happen to the cluster.
