@@ -30,7 +30,7 @@ tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 
 Hmm, all the log files under `./support-bundle-data/trouble-app` are empty! 🤔
 
-**NOTE**: If you don't have a directory `./support-bundle/trouble-app`, your app deployment might have failed. Run `. install-trouble.sh` to re-install the application.
+**NOTE**: If you don't have a directory `./support-bundle-data/trouble-app`, your app deployment might have failed. Run `. install-trouble.sh` to re-install the application.
 
 Let's continue digging in the other information we collected.
 Each path under `cluster-resources` corresponds to a `<resource>/namespace.json` for namespaced resources, or `<resource>/.json` for cluster-level resources.
