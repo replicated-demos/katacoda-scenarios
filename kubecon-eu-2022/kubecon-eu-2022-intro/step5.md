@@ -1,7 +1,7 @@
 # The Jig is up!
 
 ## What happened?
-I have to admit, the "real" cluster has been fixed long ago. :)
+I have to admit, the "real" cluster has been fixed several weeks ago. :)
 
 What we actually did here is troubleshoot the cluster which was in a degraded state at one point, we were basically using logs from the cluster that were collected several weeks ago.
 
@@ -35,10 +35,10 @@ The following resources need to be supported in the future:
 * Secrets
 `kubectl get secrets`
 
-* Exec (because the pod is not physically there)
+* Exec (because the pod is physically not there)
 `kubectl exec`
 
-* Edit (of course because the pod is not physically there)
+* Edit (of course because the pod is not physically not there)
 `kubectl edit`
 
 * PV

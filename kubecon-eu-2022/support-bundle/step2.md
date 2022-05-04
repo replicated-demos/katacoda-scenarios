@@ -31,7 +31,7 @@ We can expand this by running the following (which will also remove the time-sta
 If you visit the `support-bundle-data` folder in the IDE tab, you should see we have a mostly-full description of the state of our cluster and what's running in it, minus some potentially sensitive information (we'll cover **Redactors** in future step).
 
 For example, which version of Kubernetes are we running? 
-`./support-bundle/cluster-info/cluster_version.json`{{open}} 
+`./support-bundle-data/cluster-info/cluster_version.json`{{open}} 
 This file will tell us! 
 
 Can you get this information from `kubectl`? 

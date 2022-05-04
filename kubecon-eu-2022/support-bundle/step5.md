@@ -64,6 +64,6 @@ tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 
 If we look at the logs output now (see `./suppport-bundle/trouble-app/<pod id>.log`), we can see the token is redacted. 
 It has also been redacted in our k8s cluster-resources: 
-`./support-bundle/cluster-resources/pods/trouble.json`{{open}}
+`./support-bundle-data/cluster-resources/pods/trouble.json`{{open}}
 
 Now even if a dev leaks this information, we don't need to worry about transmitting it in our support bundles.

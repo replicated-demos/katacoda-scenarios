@@ -65,6 +65,7 @@ kubectl support-bundle trouble-2.yaml
 
 If we extract those results, we've got a new problem though... 
 ```bash
+mkdir support-bundle-data
 tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
@@ -76,6 +77,6 @@ Contacting API with SOOPER_SECRET:cccccctteeeufbfeecdhrevfnrcbtgfcvikuhvvdllcj
 ```
 
 This is also a problem, because the secret is a literal in our pod spec for the deployment.
-`./support-bundle/cluster-resources/pods/trouble.json`{{open}}
+`./support-bundle-data/cluster-resources/pods/trouble.json`{{open}}
 
 While we're waiting for the dev team to fix the issue, let's make sure we don't leak this information again our final topic, **Redactors**.
