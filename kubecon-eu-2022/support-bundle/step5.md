@@ -56,8 +56,8 @@ Let's run the the final spec!
 This time we'll use the `interactive=false` flag and pipe to `jq` so we can mimic using the output programmatically.
 
 ```bash
-rm -rf support-bundle*
-mkdir support-bundle
+rm -rf support-bundle-*
+mkdir support-bundle-data
 kubectl support-bundle trouble-3.yaml --interactive=false | jq
 tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
