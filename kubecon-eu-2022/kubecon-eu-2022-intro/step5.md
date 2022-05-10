@@ -1,9 +1,4 @@
-# The Jig is up!
-
-## What happened?
-I have to admit, the "real" cluster has been fixed several weeks ago. :)
-
-What we actually did here is troubleshoot the cluster which was in a degraded state at one point, we were basically using logs from the cluster that were collected several weeks ago.
+# Under the hood!
 
 ## How did this work?
 

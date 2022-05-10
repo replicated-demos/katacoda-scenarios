@@ -25,4 +25,3 @@ POST /api/v1/namespaces/rook-ceph/pods/rook-ceph-mon-a-85546b9c7d-nkv2f/exec?com
 Error from server:
 ```
 
-So how do we go about fixing this issue then?
