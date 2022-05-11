@@ -62,7 +62,7 @@ kubectl support-bundle trouble-3.yaml --interactive=false | jq
 tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
-If we look at the logs output now (see `./suppport-bundle/trouble-app/<pod id>.log`), we can see the token is redacted. 
+If we look at the logs output now (see `./support-bundle-data/trouble-app/<pod id>.log`), we can see the token is redacted. 
 It has also been redacted in our k8s cluster-resources: 
 `./support-bundle-data/cluster-resources/pods/trouble.json`{{open}}
 
