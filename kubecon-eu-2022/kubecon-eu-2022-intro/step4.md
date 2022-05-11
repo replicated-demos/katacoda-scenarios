@@ -18,10 +18,8 @@ error: unable to launch the editor "vi"
 `kubectl -n rook-ceph exec -it rook-ceph-mon-a-85546b9c7d-nkv2f -- /bin/bash`{{execute}}
 
 This looks very ominous
+
 ```
-Defaulted container "mon" out of: mon, init-mon-fs (init)
-called getNotFound
-POST /api/v1/namespaces/rook-ceph/pods/rook-ceph-mon-a-85546b9c7d-nkv2f/exec?command=%2Fbin%2Fbash&container=mon&stdin=true&stdout=true&tty=true
 Error from server:
 ```
 
