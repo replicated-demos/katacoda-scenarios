@@ -69,7 +69,7 @@ mkdir support-bundle-data
 tar zxf support-bundle-*.tar.gz -C support-bundle-data --strip-components=1
 ```{{execute}}
 
-If we take a look at the logs for the running pod, one of the devs is echoing our API secret in the logs (see `./suppport-bundle/trouble-app/<pod id>.log`)!
+If we take a look at the logs for the running pod, one of the devs is echoing our API secret in the logs (see `./support-bundle-data/trouble-app/<pod id>.log`)!
 ```
 ...
 Contacting API with SOOPER_SECRET:cccccctteeeufbfeecdhrevfnrcbtgfcvikuhvvdllcj
