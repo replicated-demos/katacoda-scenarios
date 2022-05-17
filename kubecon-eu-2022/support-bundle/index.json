@@ -45,7 +45,10 @@
       }
   },
   "environment": {
-    "uilayout": "vscode-terminal-split"
+    "uieditorpath": "/root",
+    "showide": true,
+    "idePort": 23000,
+    "uilayout": "terminal"
   },
   "backend": {
     "imageid": "kubernetes-cluster-running:1.18"
